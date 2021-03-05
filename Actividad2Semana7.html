@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Actividad 2</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<script>
+		var nmayor=0;
+		var i=0;
+	</script>
+</head>
+<body bgcolor="#F8FABC">
+	<center><p style="font-family: 'Brush Script MT'; font-size: 40px;">Actividad #2</p></center>
+	<div class="form1"><form><center>
+		<label id="oli" class="oli"><h2>Digite máximo 5 números</h2></label>
+		<input type="text" id="n1" class="n1">
+		<br><br>
+		<input type="button" value="Ingresar" class="boton" id="boton" onclick="ing();">
+	</center></form></div>
+
+	<div class="form2"><form><center>
+		<label><h2>Click en el boton para ver el mayor</h2></label>
+		<input type="button" value="Mayor" onclick="mayor();">
+		<br><br>
+		<input type="text" id="resultado">
+	</center></form></div>
+
+	<a href="https://manuelalz.github.io/Periodo1/" class="button1" id="button1"><center>Volver atras</center></a>
+
+<script>
+	var n=[0];
+
+	function ing()
+	{
+		var n1=document.getElementById("n1").value;
+		var oli=document.getElementById("oli");
+		t=n.length;
+		
+		if(t<=4)
+		{
+			n.push(n1);
+			console.log(n);
+		}
+
+		if(t==5)
+		{
+			n.push(n1);
+			console.log(n);
+			var n1j=document.getElementById("n1");
+			botom=document.getElementById("boton");
+			n1j.className="esconde";
+			boton.className="esconde";
+			oli.innerHTML='<h2>Ya digitaste los 5 números</h2>'+'<h3>No puedes ingresar mas</h3>';
+		}
+	}
+
+	function mayor()
+	{
+		var resultado=document.getElementById("resultado");
+		var nmayor=0;
+		var i=0;
+
+		for(i=0;i<=5;i++)
+		{
+			if(n[i]>nmayor)
+			{
+				nmayor=n[i];
+			}
+		}
+
+		console.log(nmayor);
+		resultado.value=nmayor;
+	}
+</script>
+</body>
+</html>

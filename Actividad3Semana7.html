@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mouse</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body onmousemove="position(event)">
+	<div id="cuadrogrande" class="cuadrogrande">
+		<br><br><center><p style="font-family: 'Brush Script MT'; font-size: 40px;">Actividad #3</p></center>
+	</div>
+	<div id="cuadroa3" class="cuadroa3"></div>
+
+	<a href="https://manuelalz.github.io/Periodo1/" class="button1" id="button1"><center>Volver atras</center></a>
+<script>
+	function position(event)
+	{ 
+		var x=event.clientX;
+		var y=event.clientY;
+		var cuadroa3=document.getElementById('cuadroa3');
+
+		if(x>=478 && y>=218 && x<=889 && y<=407)
+		{
+			cuadroa3.className="cuadro2";
+			cuadroa3.innerHTML='Estas dentro del cuadro ;)';
+			
+		}
+		else
+		{
+			cuadroa3.className="cuadroa3";
+			cuadroa3.innerHTML='Estas fuera del cuadro :(';
+		}
+	}
+</script>
+</body>
+</html>

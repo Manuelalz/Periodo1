@@ -1,0 +1,101 @@
+.cuadro{
+position: absolute;
+width: 30%;
+height: 30%;
+left: 35%;
+top: 25%;
+background-color: #A8F7FC;
+text-align: center;
+line-height: 180px;
+font-size: 37px;
+font-family: courier;
+}
+.cuadrito{
+position: absolute;
+width: 30%;
+height: 30%;
+left: 35%;
+top: 25%;
+background-color: #38E0EB;
+text-align: center;
+line-height: 180px;
+font-size: 37px;
+font-family: courier;
+}
+.cuadrii{
+position: absolute;
+width: 30%;
+height: 30%;
+left: 35%;
+top: 25%;
+background-color: #19AFB9;
+text-align: center;
+line-height: 180px;
+font-size: 37px;
+font-family: courier;
+}
+
+.form1{
+position: absolute;
+top: 20%;
+left: 37%;
+width: 25%;
+height: 25%;
+background-color: pink;
+}
+.form2{
+position: absolute;
+top: 50%;
+left: 30%;
+width: 40%;
+height: 25%;
+background-color: aqua;
+}
+.esconde{
+display: none;
+}
+
+.cuadroa3{
+font-family: Courier;
+font-size: 37px;
+position: absolute;
+top: 35%;
+left: 35%;
+width: 30%;
+height: 30%;
+background: #C6A0FA;
+text-align: center;
+}
+.cuadro2{
+font-family: Courier;
+font-size: 30px;
+position: absolute;
+top: 35%;
+left: 35%;
+width: 30%;
+height: 30%;
+background: #BCFAF5;
+text-align: center;
+}
+.cuadrogrande{
+position: absolute;
+top: -1%;
+left: -1%;
+width: 101%;
+height: 101%;
+background-color: pink;
+}
+
+
+
+.button1{
+position: absolute;
+top: 85%;
+left: 40%;
+background: #9A99FC;
+width: 20%;
+height: 7%;
+border-radius: 20px;
+font: oblique bold 160% cursive;
+text-decoration: none;
+}

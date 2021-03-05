@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Actividad 1</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<script>
+		var x=10;
+	</script>
+</head>
+<body onload="primero()" bgcolor="#D9D0FE">
+	<center><p style="font-family: 'Brush Script MT'; font-size: 50px;">Actividad #1</p></center>
+	<h1><div class="cuadro" id="cuadro"></div></h1>
+
+	<a href="https://manuelalz.github.io/Periodo1/" class="button1" id="button1"><center>Volver atras</center></a>
+	
+<script>
+	function primero()
+	{
+		var n1=document.getElementById('cuadro');
+		n1.innerHTML='Hola';
+		n1.className="cuadro";
+		setTimeout(tercero,4000);
+	}
+
+	function segundo()
+	{
+		var n1=document.getElementById('cuadro');
+		n1.innerHTML=x;
+		n1.className="cuadrito";
+		x=x-1;
+		if(x==-1)
+		{
+			clearInterval(n);
+			n1.innerHTML='Adios';
+			n1.className="cuadrii";
+		}
+	}
+
+	function tercero()
+	{
+		n=setInterval(segundo,1000);
+	}
+</script>
+</body>
+</html>
